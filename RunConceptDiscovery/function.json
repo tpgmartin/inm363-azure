@@ -1,0 +1,26 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "blobin",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "input/{blobname}.JPEG",
+      "connection": "MyStorageConnectionString"
+    },
+    {
+      "name": "blobout",
+      "type": "blob",
+      "direction": "out",
+      "path": "output/{blobname}.JPEG",
+      "connection": "MyStorageConnectionString"
+    },
+    {
+      "name": "blobout2",
+      "type": "blob",
+      "direction": "out",
+      "path": "output2/{blobname}.JPEG",
+      "connection": "MyStorageConnectionString"
+    }
+  ]
+}
